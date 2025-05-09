@@ -119,7 +119,7 @@ onnx==1.17.0
     # via
     #   -r ./extra-pdf-image.in
     #   unstructured-inference
-onnxruntime==1.19.2
+onnxruntime-gpu==1.21.1
     # via
     #   -r ./extra-pdf-image.in
     #   unstructured-inference
