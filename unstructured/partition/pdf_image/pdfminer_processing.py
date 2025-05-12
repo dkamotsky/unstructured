@@ -224,6 +224,8 @@ def array_merge_inferred_layout_with_extracted_layout(
         return inferred_layout
     if len(inferred_layout) == 0:
         return extracted_layout
+    if isinstance(inferred_layout, list):
+        inferred_layout = LayoutElements.from_list(inferred_layout)
 
     w, h = page_image_size
     full_page_region = Rectangle(0, 0, w, h)
